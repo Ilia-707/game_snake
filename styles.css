@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {	
+	width: 99vw;
+	height: 100vh;
+	background-image: url(snake-1634293_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+button {
+	margin: 1em 1.5em;
+	font-family: Geneva;
+	color: white;
+	font-size: 1.2em;
+	padding: .2em .8em;
+	background-color: red;
+	border-radius: 0.8em;
+	border: none;
+}
+#newGame {
+	background-color: red;
+	border: 1px solid #e89f9f;
+}
+#param {
+	background-color: green;
+	border: 1px solid #7cc17c;
+}
+button:focus {
+	outline: none;	
+}
+#newGame:active,
+#param:active {
+	background-color: #22b6f7;	
+}
+.param {
+	visibility: hidden;
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	border: 1px solid black;
+	border-radius: 1em;
+	background-color: white;
+	width: 250px;
+	text-align: center;
+}
+.param div {	
+	margin: 1em auto;
+	text-align: center;
+}
+.param button {	
+	margin: 1em auto;
+	text-align: center;
+}
+#apply {
+	font-size: 0.8em;
+	color: black;
+}
+#apply:active {
+	background-color: #22b6f7;	
+}
+.container {
+    display: flex;
+	align-items: stretch;
+	width: 100%;
+	height: 90%;
+	position: relative;		
+}
+.col1 {
+	position: relative;
+	flex-basis: 200px;
+	flex-grow:1;
+}
+.col2 {	
+	flex-basis: 600px;
+	flex-grow:1;
+}
+#zone {	
+	margin: 30px auto;
+	position: relative;	
+	width: 600px;
+	height: 600px;
+	background-color: #6b3420;
+	outline: 2px solid green;
+	text-align: center;
+	vertical-align: center;
+}
+.gameOver {	
+	color: red;
+	font-size: 3em;
+}
+.link {
+    box-sizing: border-box;	
+	position: absolute;	
+	background-color: yellow;
+	border: 3px solid green;
+}
+.col1>div {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	width: 200px;
+	height: 130px;
+	background-color: white;
+	text-align: center;
+	outline: 2px solid green;
+}
+.col1 span {
+	font-family: Geneva;
+	font-size: 2em;
+	font-weight: bold;
+}
+#result {
+	font-family: Geneva;
+	font-size: 4em;
+	font-weight: bold;
+	vertical-align: center;
+}

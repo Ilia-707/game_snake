@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta  charset="utf-8">
+  <link rel='stylesheet' href="styles.css">
+</head>
+<body>
+ <div class='menu'>
+	<button id="newGame">новая игра</button>
+	<button id="param">параметры</button>
+    <div class="param">
+		<div>
+		    <label name="pole">размер поля</label>
+		    <select id="pole" name="pole">
+			    <option value="20">20*20</option>
+			    <option value="15">15*15</option>
+			    <option value="10">10*10</option>
+		    </select>
+		</div>
+        <div>
+		    <label name="speed">скорость</label>
+		    <select id="speed" name="speed">
+			    <option value="500">первая</option>
+			    <option value="400">вторая</option>
+			    <option value="300">третья</option>
+		    </select>
+		</div>
+		<button id="apply">применить</button>
+    </div>        
+ </div>
+  <div class='container'>
+    <div class='col1'>
+	    <div>
+		    <span>очки</span>
+	        <div id='result'>
+			</div>
+		</div>
+	</div>
+	<div class='col2'>	  
+  	    <div id='zone'>		    
+  	    </div>	  
+	</div>
+    <div class='col1'>
+	    <span>для управления змейкой используй клавиши: &#8592;, &#8594;, &#8593;, &#8595;</span>
+	</div>	
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>
